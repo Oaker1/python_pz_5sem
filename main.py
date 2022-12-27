@@ -33,7 +33,7 @@ def get_user(userid):
     cursor.execute(sql, (str(userid),) )
     data = cursor.fetchall()
     print(data)
-    return jsonify(data)
+    return data
 
 
 @app.route('/users', methods=['POST'])
